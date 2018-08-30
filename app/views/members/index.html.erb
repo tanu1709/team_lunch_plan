@@ -1,0 +1,18 @@
+
+<div class="card text-center login-type-container">
+  <div class="card-header">
+    <h4>Type Of Member</h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Please select an option to login</h5>
+    <%= link_to 'managers/login' do %>
+        <input type="radio" name="gender" value="male"> Manager <br>
+    <% end %>
+    <%= link_to 'team_members/login' do %>
+        <input type="radio" name="gender" value="female"> Team Member <br>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+
+  </div>
+</div>

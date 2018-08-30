@@ -1,0 +1,12 @@
+<h1>Suggest Place</h1>
+<%= form_tag("/team_members/validate", method: "get") do %>
+    <b><%= label_tag(:uname, "Name:") %></b>
+    <%= text_field_tag(:uname, nil, placeholder: 'Enter Name') %>
+    </br>
+    </br>
+    <b><%= label_tag(:psw, "Address:") %></b>
+    <%= password_field_tag(:psw, nil , placeholder: 'Enter Address') %>
+    </br>
+    </br>
+    <%= submit_tag("Suggest Place", class: "login_button", :onclick => "validate()")  %>
+<% end %>

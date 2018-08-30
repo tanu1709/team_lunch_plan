@@ -1,0 +1,19 @@
+
+
+
+
+<div class="card text-center team-member-index-container">
+  <div class="card-header">
+    <h4>Select an option for places</h4>
+  </div>
+  <div class="card-body manage-add-body">
+    <%= link_to '/team_members/show' do %>
+        <button type="button" name="list" value="list">Proposed Places</button>
+    <% end %>
+    <%= link_to '/places/add' do %>
+        <button type="button" name="add" value="add">Propose place</button>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>

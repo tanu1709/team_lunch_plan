@@ -1,0 +1,39 @@
+<div class="card text-center team-member-index-container">
+  <div class="card-header">
+    <h4>List of team members and suggested places</h4>
+  </div>
+  <div class="card-body manage-add-body">
+
+    <table style = "width: 100%; ">
+      <thead style = "line-height: 3em;">
+      <tr style = "background-color: darkgray">
+        <td>Name</td>
+        <td>Email</td>
+        <td>Suggested Places</td>
+      </tr>
+      </thead>
+      <tbody style = "background-color: palegoldenrod">
+      <% i = 1 %>
+      <% @team_members.each do |row| %>
+          <tr style = "line-height: 2em;">
+            <td align = 'center'><%= "#{row['name']}" %></td>
+            <td align = 'center'><%= "#{row['email']}" %></td>
+            <td align = 'center'>
+              <% if row.places.length > 0 %>
+                  <% i = 1 %>
+                  <% row.places.each do |place| %>
+                      <%= i %>. <%="#{place.name}"%><br />
+                      <% i+=1 %>
+                  <% end %>
+              <% else %>
+                  Places Not Suggested
+              <%end%>
+            </td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>

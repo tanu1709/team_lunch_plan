@@ -1,0 +1,22 @@
+
+<div class="card text-center manager-add-container">
+  <div class="card-header">
+    <h4>Suggest Place</h4>
+  </div>
+  <div class="card-body">
+    <%= form_tag("/places/suggested_places_add", method: "get") do %>
+        <b><%= label_tag(:pname, "Name:") %></b>
+        <%= text_field_tag(:pname, nil, placeholder: 'Enter Name') %>
+        </br>
+        </br>
+        <b><%= label_tag(:addr, "Address:") %></b>
+        <%= text_field_tag(:addr, nil , placeholder: 'Enter Address') %>
+        </br>
+        </br>
+        <%= submit_tag("Suggest Place", class: "login_button", :onclick => "validate()")  %>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+
+  </div>
+</div>

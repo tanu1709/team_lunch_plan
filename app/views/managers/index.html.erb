@@ -1,0 +1,17 @@
+<div class = "card text-center team-operations-container">
+  <div class = "card-header">
+    <h4>Team Operations</h4>
+  </div>
+  <div class="card-body">
+    <%= link_to '/managers/show' do %>
+        <button type="button" name="list" value="list">List Team members</button>
+    <% end %>
+
+    <%= link_to '/managers/add' do %>
+        <button type="button" name="add" value="add">Add Team Members</button>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+
+  </div>
+</div>

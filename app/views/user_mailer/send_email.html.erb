@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome <%= @username %></h1>
+    <p>
+      You are now a team member<br/>
+      Your Credentials are:<br />
+      Username: <%= @username %><br/>
+      Password: <%= @password %><br/>
+    </p>
+    <p>
+      To reset the password, just follow this link: <br />
+      <%= link_to @url do %>
+          <%= @url %>
+      <% end %>
+    </p>
+  </body>
+</html>

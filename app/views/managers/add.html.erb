@@ -1,0 +1,28 @@
+<div class="card text-center manager-add-container">
+  <div class="card-header">
+    <h4>Add Team members</h4>
+  </div>
+  <div class="card-body">
+
+    <%= form_tag("/managers/insert", method: "get") do %>
+        <b><%= label_tag(:name, "Username:") %></b>
+        <%= text_field_tag(:name, nil, placeholder: 'Enter Username') %>
+        </br>
+        </br>
+        <b><%= label_tag(:email, "Email:") %></b>
+        <%= text_field_tag(:email, nil, placeholder: 'Enter Email') %>
+        </br>
+        </br>
+        <b><%= label_tag(:password, "Password:") %></b>
+        <%= password_field_tag(:password, nil , placeholder: 'Enter passord') %>
+        </br>
+        </br>
+        <%= submit_tag("Add Member", class: "login_button", :onclick => "validate()")  %>
+    <% end %>
+
+
+  </div>
+  <div class="card-footer text-muted">
+
+  </div>
+</div>

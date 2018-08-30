@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 20
+  username: postgres
+  password: postgres
+  port: 5432
+  host: 172.17.0.1
+  reconnect: true
+
+development:
+  <<: *default
+  database: assignment
+  username: postgres
+  password: postgres
