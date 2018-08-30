@@ -9,3 +9,11 @@ Step 1: git clone https://github.com/tanu1709/team_lunch_plan.git
 Step 2: git pull
 Step 3: cd assignment
 Step 4: sh run.sh
+
+Manager data
+    name: Manager1
+    email: manager1@gmail.com (give valid email change in seeds.rb)
+    password: test1234
+    
+Send mail
+    For sending mail change the default mail id from application_mailer.rb and development.rb

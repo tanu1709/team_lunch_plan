@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-manager = Manager.find_by(email: "abcd@gmail.com", password: 'test1234')
+manager = Manager.find_by(email: "manager1@gmail.com", password: 'test1234')
 unless manager.present?
-  admin = Manager.create!(:name => "Admin", :email => "abcd@gmail.com", :password => 'test1234')
+  admin = Manager.create!(:name => "Manager1", :email => "manager1@gmail.com", :password => 'test1234')
 end
