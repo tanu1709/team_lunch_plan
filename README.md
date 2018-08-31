@@ -17,3 +17,7 @@ Manager data
     
 Send mail
     For sending mail change the default mail id from application_mailer.rb and development.rb
+
+For letter_opener
+	Change the config.action_mailer.delivery_method = :smtp in development.rb to
+	config.action_mailer.delivery_method = :letter_opener
